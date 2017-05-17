@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+android:id="@+id/drawer_layout"
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/root_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.soft.xiren.PullToRefreshLayout
+            android:id="@+id/pull_to_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <!--绘图-->
+            <include layout="@layout/refresh_head" />
+
+            <com.soft.xiren.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:id="@+id/tv_test"
+                android:text="Hello World!" />
+
+
+        </com.soft.xiren.PullToRefreshLayout>
+
+
+
+    </RelativeLayout>
+
+</android.support.v4.widget.DrawerLayout>
